@@ -1,0 +1,15 @@
+body {
+  background-color: black;
+}
+.navbar-pink {
+  background: rgb(243, 12, 205);
+}
+.navbar-white {
+  background: whitesmoke;
+}
+img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  border-radius: 5%;
+}
