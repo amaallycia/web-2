@@ -10,25 +10,26 @@ body {
 img {
   display: block;
   margin: auto;
-  width: 100%;
+  padding-top: none;
   border-radius: 1%;
   border: none;
+  height: none;
+}
+.yes {
+  color: azure;
+  text-align: center;
+  position: relative;
+  bottom: 400px;
 }
 h1 {
-  width: 100%;
-  padding: 100px 100px 100px 100px;
+  color: azure;
   text-align: center;
-  color: rgb(250, 248, 228);
   position: relative;
-  bottom: 500px;
-  background-color: rgba(75, 61, 1, 0.247);
+  bottom: 405px;
 }
 h2 {
-  width: 100%;
-  font-size: 30px;
+  color: azure;
   text-align: center;
   position: relative;
-  bottom: 600px;
-  left: 40px;
-  color: yellow;
+  bottom: 410px;
 }
