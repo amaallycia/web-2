@@ -141,12 +141,12 @@ p {
   text-decoration: underline;
   color: rgb(17, 179, 254);
 }
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   body {
     background: #f2f2f5;
   }
   p {
-    color: #ebebf1;
+    color: #000008;
   }
   h1,
   h2,
