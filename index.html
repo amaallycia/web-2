@@ -1,67 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-26MKZVPYG3"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-26MKZVPYG3");
+    </script>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="latest jeep cars" />
-    <title>JEEPCOLLECTION</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lycia</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <script
     src="https://kit.fontawesome.com/6bf25131c3.js"
     crossorigin="anonymous"
   ></script>
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-    crossorigin="anonymous"
-  />
-
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"
-  ></script>
-  <link rel="stylesheet" href="src/style.css" />
-
   <body>
-    <nav class="navbar" data-bs-theme="navbar-white"></nav>
-    <nav class="navbar navbar-expand-lg navbar-pink fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand text-white" href="#">JEEP-GALLERY</a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand text-dark" href="index.html">Lycia</a>
         <button
-          class="navbar-toggler bg-white text-white shadow-sm"
+          class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a
-              class="nav-link active text-white"
-              aria-current="page"
-              href="index.html"
-              >Home</a
-            >
-            <a class="nav-link text-white" href="about.html">Models</a>
-            <a class="nav-link text-white" href="contact.html">Contact</a>
-            <a class="nav-link text-white" href="blog.html ">blog</a>
-          </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html#contact">Contact me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html#contact">Blog</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
-    <div><img src="medias/modern.jpg" width="80%" class="img-fluid" /></div>
-    <h2>solace</h2>
-    <h1 class="d-sm-center">JEEP-COLLECTION</h1>
-    <div class="yes container-fluid">
-      Discover Jeep Models & We here to help you
-      <div>to choose the best model depending with your budget</div>
-      <div>its durability through our online latest collection</div>
+
+    <div class="row mt-5">
+      <div class="col-6">
+        <h2 class="mb-3">Hi I am</h2>
+
+        <h1>Lycia James</h1>
+        <h3>Front-end developer based in Malawi</h3>
+      </div>
+      <div class="col-6">
+        <img src="medias/model.jpg" class="img-fluid rounded" />
+      </div>
     </div>
-    <i> class="fa-brands fa-instagram"></i>
+    <div class="navigation-links mb-5">
+      <a href="contact.html" class="primary-link">Lets Talk </a>
+      <a href="about.html#contact" class="secondary-link">Hire me</a>
+    </div>
+    <div class="row mt-5">
+      <div class="col-6">
+        <img src="medias/use.JPG" class="img-fluid rounded" />
+      </div>
+      <div class="col-6">
+        <h2 class="mb-3">About me</h2>
+        <h3>Developer & Designer</h3>
+        <p>
+          I am a Front end Web Developer & Graphic Designer, I Develope Websites
+          that are more interactive with web animation, I design responsive
+          website which makes it accessible to all users regardless of their
+          device
+        </p>
+        <div class="mt-5">
+          <a href="contact.html" class="primary-link">Lets Talk</a>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <a href="mailto:lycianex27@gmail.com" class="email-link"
+        >lycianex27@gmail.com</a
+      >
+    </footer>
+    <div class="d-flex justify-content-evenly yes">
+      <a href=""><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.instagram.com/ama_al_lycia03/"
+        ><i class="fa-brands fa-instagram"></i
+      ></a>
+      <a href=""><i class="fa-brands fa-github"></i></a>
+    </div>
   </body>
 </html>
