@@ -154,8 +154,14 @@ p {
   span {
     display: none;
   }
+  .form {
+    margin-top: 50px;
+    width: 200px;
+    height: 60vh;
+    background: rgba(0, 0, 0, 0.747);
+  }
   .primary-link .primary {
-    padding: 9px 20px;
+    padding: 5px 20px;
     text-decoration: none;
     text-transform: capitalize;
 
