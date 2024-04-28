@@ -156,12 +156,12 @@ p {
   }
   .form {
     margin-top: 50px;
-    width: 150px;
-    height: 60vh;
+    width: 100px;
+    height: 80vh;
     background: rgba(0, 0, 0, 0.747);
   }
   .primary-link .primary {
-    padding: 5px 15px;
+    padding: 3px 10px;
     text-decoration: none;
     text-transform: capitalize;
 
