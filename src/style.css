@@ -1,33 +1,25 @@
-.navbar-pink {
-  background: transparent;
+.maybe {
+  margin-top: -60px;
 }
-.navbar-white {
-  background: black;
+
+.link {
+  text-align: center;
+}
+* {
+  margin: 0;
+  padding: 0;
 }
 img {
   display: block;
   margin: auto;
   padding-top: none;
-  border-radius: 30%;
+  border-radius: 3%;
   border: none;
   height: none;
 }
-h4 {
+h2 {
   text-align: center;
-  font-size: 30px;
-  color: #f5f2fe;
-  background-color: green;
-  width: 40%;
-}
-primary-link {
-  border-radius: 4px;
-  padding: 20px 15px;
-  text-decoration: none;
-  text-transform: capitalize;
-  background: rgb(228, 91, 155);
-  box-shadow: var(--box-shadow);
-  color: white;
-  background-color: palevioletred;
+  font-size: 40px;
 }
 :root {
   --primary-color: #6c63ff;
@@ -36,34 +28,14 @@ primary-link {
 }
 
 body {
-  margin-top: 100px;
-  background: whitesmoke;
+  margin-top: 0px;
+  padding-top: 20px;
+  background: rgb(250, 247, 249);
 }
 .yes {
   font-size: 40px;
   background-color: black;
   padding-bottom: 10px;
-}
-
-h2 {
-  margin: auto;
-  color: #ebebf1;
-  background-color: rgb(17, 179, 254);
-  font-size: 48px;
-  width: 60%;
-  border-radius: 80%;
-  text-align: center;
-}
-
-h1 {
-  color: rgb(8, 0, 6);
-  opacity: 2.5;
-  font-size: 96px;
-}
-
-h3 {
-  font-size: 40px;
-  color: rgb(17, 179, 254);
 }
 
 p {
@@ -82,18 +54,44 @@ p {
   margin: 20px;
 }
 
-.primary-link {
-  border-radius: 4px;
-  padding: 20px 15px;
+.primary {
+  padding: 10px 80px;
   text-decoration: none;
   text-transform: capitalize;
-  background: rgb(17, 179, 254);
+
   box-shadow: var(--box-shadow);
-  color: white;
+
+  height: 20px;
+  background: rgb(248, 6, 155);
+  border: none;
+  margin-top: 30px;
+  font-size: 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  color: aliceblue;
+  transition: all 0.5s ease;
 }
-.primary-link:hover {
-  color: rgb(228, 91, 155);
-  background-color: #ebebf1;
+.primary-link {
+  padding: 10px 60px;
+  text-decoration: none;
+  text-transform: capitalize;
+
+  box-shadow: var(--box-shadow);
+
+  height: 20px;
+  background: rgb(248, 6, 155);
+  border: none;
+  margin-top: 20px;
+  font-size: 18px;
+  border-radius: 30px;
+  cursor: pointer;
+  color: aliceblue;
+  transition: all 0.5s ease;
+}
+
+.primary:hover {
+  background: white;
+  color: rgb(248, 6, 155);
   font-weight: bold;
 }
 .text-dark {
@@ -153,4 +151,98 @@ p {
   h3 {
     color: rgb(8, 8, 8);
   }
+}
+.box {
+  font-size: 18px;
+  margin-top: 50px;
+  font-size: medium;
+  padding: 16px 16px;
+  background-color: #ffffffad;
+}
+.form {
+  margin-top: 50px;
+  width: 250px;
+  height: 60vh;
+  background: rgba(0, 0, 0, 0.747);
+}
+.form h2 {
+  width: 200px;
+  text-align: center;
+  font-size: 22px;
+  font-family: sans-serif;
+  color: rgb(241, 232, 238);
+
+  border-radius: 2px;
+  margin-top: 10px;
+  padding: 10px;
+}
+.form input {
+  width: 240px;
+  height: 35px;
+  background: transparent;
+  border-bottom: 1px solid rgb(248, 6, 155);
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: aliceblue;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  font-family: sans-serif;
+}
+.form input:focus {
+  outline: none;
+}
+::placeholder {
+  color: aliceblue;
+  font-family: arial;
+}
+.btrn {
+  width: 240px;
+  height: 40px;
+  background: rgb(248, 6, 155);
+  border: none;
+  margin-top: 30px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: aliceblue;
+  transition: all 0.5s ease;
+}
+.btrn:hover {
+  background: white;
+  color: rgb(248, 6, 155);
+}
+.btrn a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.form .link {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  padding-top: 20px;
+  text-align: center;
+}
+.form .link a {
+  text-decoration: none;
+  color: rgb(248, 6, 155);
+}
+.link span {
+  color: #fff;
+}
+
+.icon a {
+  text-decoration: none;
+  color: #fff;
+}
+.icon ion-icon {
+  color: #fff;
+  font-size: 30px;
+  padding-left: 14px;
+  padding-top: 3px;
+  transition: 0.3 ease;
+}
+.icon ion-icon:hover {
+  color: rgb(248, 6, 155);
 }

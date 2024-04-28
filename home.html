@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Add global styles */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Update navigation bar styles */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 75px;
+      padding: 0 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .navbar .icon {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar .logo {
+      color: #fff;
+      font-size: 2rem;
+      margin-right: 1rem;
+    }
+
+    .navbar .menu {
+      display: flex;
+      list-style-type: none;
+    }
+
+    .navbar .menu li {
+      margin: 0 1rem;
+    }
+
+    .navbar .menu a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .navbar .search {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar .search input[type="search"] {
+      width: 20rem;
+      height: 3rem;
+      padding: 0.5rem;
+      border: none;
+      border-radius: 0.25rem;
+      background-color: #fff;
+      color: #333;
+    }
+
+    .navbar .search button {
+      background-color: transparent;
+      border: none;
+      color: #fff;
+      font-size: 1.5rem;
+      cursor: pointer;
+      margin-left: 1rem;
+    }
+
+    /* Update menu toggle styles */
+    .navbar .menu-btn {
+      display: none;
+      background-color: transparent;
+      border: none;
+      color: #fff;
+      font-size: 2.5rem;
+      cursor: pointer;
+    }
+
+    .navbar #nav-menu {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 75px;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transform: translateX(-100%);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar #nav-menu.active {
+      transform: translateX(0);
+    }
+
+    .navbar #nav-menu li {
+      text-align: center;
+      margin: 1rem 0;
+    }
+
+    .navbar #nav-menu a {
+      color: #333;
+    }
+
+    /* Update content styles */
+    .content {
+      text-align: center;
+      color: #fff;
+      padding: 0 20px;
+    }
+
+    .content h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+
+    .content span {
+      display: block;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .content p {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .content button {
+      background-color: #fff;
+      color: #333;
+      padding: 0.5rem 2rem;
+      border: none;
+      border-radius: 0.25rem;
+      cursor: pointer;
+    }
+
+    /* Update login form styles */
+    .form {
+      background-color: #fff;
+      padding: 2rem;
+      margin-top: 2rem;
+      text-align: center;
+    }
+
+    .form h2 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .form input[type="email"],
+    .form input[type="password"] {
+      width: 20rem;
+      height: 3rem;
+      padding: 0.5rem;
+      border: none;
+      border-radius: 0.25rem;
+      background-color: #f2f2f2;
+      color: #333;
+      margin-bottom: 1rem;
+    }
+
+    .form button {
+      background-color: transparent;
+      color: #333;
+      padding: 0.5rem 2rem;
+      border: 2px solid #333;
+      border-radius: 0.25rem;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+
+    .form button a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    .form .link {
+      font-size: 1.2rem;
+      margin-top: 1rem;
+    }
+
+    .form .link a {
+      color: #333;
+      text-decoration: underline;
+    }
+
+    .form .liw {
+      display: none;
+    }
+
+    .form .icon {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .form .icon a {
+      color: #333;
+      font-size: 2rem;
+      margin: 0 1rem;
+    }
+
+    /* Add media queries for responsive design */
+    @media screen and (max-width: 768px) {
+      .navbar .menu {
+        display: none;
+      }
+
+      .navbar .menu-btn {
+        display: block;
+      }
+
+      .navbar #nav-menu {
+        width: 100%;
+      }
+    }
+  </style>
+  <body>
+    <div
+      class="maybe"
+      style="
+        background-image: url('laptop.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.5) 50% rgba(0, 0, 0, 0.5) 50%
+        );
+      "
+    >
+      <div class="navbar">
+        <div class="icon">
+          <h2 class="logo">AmaaL</h2>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">BOUT</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">DESIGNS</a></li>
+          </ul>
+        </div>
+        <div class="search">
+          <input
+            class="srch"
+            type="search"
+            name=""
+            placeholder="Type To text"
+          />
+          <a href="#"><button class="btn">Search</button></a>
+        </div>
+      </div>
+      <div class="content">
+        <h1>
+          Hello I'm Lycia<br />
+          <span> Fullstack Developer </span><br />
+          Based in Malawi
+        </h1>
+        <p>
+          Let me turn your Ideas into live web development <br />I Design
+          Websites that are more interactive with web animation, <br />
+          I design responsive website that are accessible to all users
+          regardless of their device
+        </p>
+        <button class="cn"><a href="">lets Talk</a></button>
+      </div>
+      <div class="form">
+        <h2>Login Here</h2>
+        <input type="email" name="email" placeholder=" Enter Email Here" />
+        <input type="password" name="" placeholder="Enter Password Here" />
+        <button class="btrn"><a href="#">Login</a></button>
+
+        <p class="link">
+          <span>Dont Have Any Account</span>
+          <br />
+          <a href="">Sign up</a>
+        </p>
+        <p class="liw">Login</p>
+        <div class="icon">
+          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+    <script>
+      function toggleMenu() {
+        const navMenu = document.getElementById("nav-menu");
+        navMenu.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

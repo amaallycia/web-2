@@ -35,7 +35,102 @@
     src="https://kit.fontawesome.com/6bf25131c3.js"
     crossorigin="anonymous"
   ></script>
-  <body>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: black;
+      border: 2px solid white;
+    }
+
+    .content-container {
+      max-width: 80rem;
+      margin: 0 auto;
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+      grid-gap: 2rem;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .content h1 {
+      font-size: 3rem;
+      margin-bottom: 2rem;
+      color: white;
+    }
+
+    .content h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: white;
+    }
+
+    .content p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: white;
+    }
+
+    .content a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .content a:hover {
+      text-decoration: underline;
+    }
+
+    .alright {
+      padding: 0.5rem 2rem;
+      border-radius: 0.25rem;
+      background-color: white;
+      color: black;
+      font-size: 1.2rem;
+      text-align: center;
+      text-decoration: none;
+      transition: 0.3s ease-in-out;
+      width: 100%;
+    }
+
+    .alright:hover {
+      background-color: #ccc;
+    }
+
+    @media screen and (max-width: 768px) {
+      .content-container {
+        padding: 1rem;
+      }
+
+      .content h1 {
+        font-size: 2rem;
+      }
+
+      .content h3 {
+        font-size: 1.2rem;
+      }
+
+      .content p {
+        font-size: 1rem;
+      }
+
+      .primary-link {
+        font-size: 1rem;
+      }
+    }
+  </style>
+  <body style="background-color: rgba(241, 62, 182, 0.76)">
     <div class="content-container container">
       <div class="content">
         <h1 class="mb-5">Let's get in touch</h1>
@@ -56,7 +151,7 @@
       </div>
       <hr />
       <br />
-      <a href="index.html" class="primary-link bg-dark">Home </a>
     </div>
+    <a href="index.html" class="alright">Home </a>
   </body>
 </html>
